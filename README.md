@@ -1,3 +1,14 @@
+
+Projeto de estudo para desenvolvimento de uma api de serviços bancários utilizando quarkus
+Endpoint principal: /contas
+	
+Metódo: GET	Endpoint:/listarContas - Lista todas contas correntes	
+Metódo: GET	Endpoint: /saldo/{numeroConta} - Exibe saldo de uma conta corrente	
+Metódo: POST - Cria uma nova conta corrente	
+Metódo: POST - Endpoint: /depositar -	Deposita determinado valor para uma conta
+Metódo: POST - Endpoint: /sacar -	Saca determinado valor da conta	
+Metódo: POST - Endpoint: /transferir - Transfere determinado valor da conta origem para a conta destino	
+
 # rest-json-quickstart
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
