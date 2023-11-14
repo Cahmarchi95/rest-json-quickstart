@@ -20,6 +20,7 @@ public class BancoResource {
     }
 
     @GET
+    @Path("/listarContas")
     public List<ContaCorrente> listarContas() {
         return contaService.listarContas();
     }
@@ -35,7 +36,7 @@ public class BancoResource {
     }
 
     @GET
-    @Path("/{numeroConta}")
+    @Path("/saldo/{numeroConta}")
     public ContaCorrente verSaldo(@PathParam("numeroConta") String numeroConta) {
         return contaService.getContaPorNumero(numeroConta);
     }
